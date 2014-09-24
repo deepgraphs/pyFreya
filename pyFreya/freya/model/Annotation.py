@@ -3,12 +3,6 @@ Created on Jul 12, 2014
 
 @author: Me
 '''
-from System import *
-from edu.stanford.nlp.trees.Tree import *
-from System.Collections.Generic import *
-from System.Collections import *
-from System.IO import *
-from System.Xml import *
 from copy import deepcopy
 class Annotation(object):
     def __init__(self):
@@ -47,12 +41,12 @@ class Annotation(object):
 
     def __str__(self): #toString
         buffer = ""
-        buffer+=" Annotation: StartOffset:" + self._startOffset
-        buffer+=" End offset:" + self._endOffset
-        buffer+=" String:" + self._text
-        buffer+=" Syntax tree:" + self._syntaxTree
+        buffer+=" Annotation: StartOffset:" + str(self._startOffset)
+        buffer+=" End offset:" + str(self._endOffset)
+        buffer+=" String:" + str(self._text)
+        # buffer+=" Syntax tree:" + str(self._syntaxTree)
         if self._features != None:
-            buffer+=" Features:" + self._features.__str__()
+            buffer+=" Features:" + str(self._features.__str__())
         return buffer
 
     def equals(self, anotherObject):
@@ -85,3 +79,10 @@ class Annotation(object):
 # overlaps
     def clone(self):
         return deepcopy(self)
+if __name__=='__main__':
+    ann= Annotation()
+    ann.setStartOffset(4)
+    ann.setEndOffset(10)
+    ann.setFeatures({'1':'feat1','2':'feat2'})
+    ann.setText("river")
+    print ann
