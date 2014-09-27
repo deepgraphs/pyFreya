@@ -8,6 +8,7 @@ class RDFS(object):
     SUBCLASSOF="http://www.w3.org/2000/01/rdf-schema#subClassOf"
     DOMAIN="http://www.w3.org/2000/01/rdf-schema#domain"
     CLASS="http://www.w3.org/2000/01/rdf-schema#Class"
+    RANGE="http://www.w3.org/2000/01/rdf-schema#range"
     PREFIX="rdfs"
 class RDF(object):
     PROPERTY="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
