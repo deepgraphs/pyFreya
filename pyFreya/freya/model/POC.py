@@ -3,9 +3,7 @@ Created on Jul 12, 2014
 
 @author: Me
 '''
-from System import *
-from System.Collections.Generic import *
-from System.Collections import *
+
 from Annotation import *
 # *
 # * representation of Potential Ontology Concept

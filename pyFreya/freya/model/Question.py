@@ -3,12 +3,7 @@ Created on Jul 13, 2014
 
 @author: Me
 '''
-from System import *
-from edu.stanford.nlp.ling.HasWord import *
-from edu.stanford.nlp.trees.Tree import *
-from System.Collections.Generic import *
-from System.Collections import *
-from System.Xml import *
+
 #import com.sun.org.apache.bcel.internal.generic.Type;
 #@XmlRootElement
 class Question(object):
